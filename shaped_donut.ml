@@ -26,7 +26,7 @@ if xi>=0 && xi < aw&&yi >= 0 && yi < ah then begin let ix = xi + yi * aw
       aw + 1) + aw) '\n' done;Bytes.to_string b in for i=0 to 10000 
         do print_string "\027[H" ; flush stdout ; print_string(rf 
               (ca *. float_of_int i) (cb *. float_of_int i))
-                              ;done
+                                ;done
 
 
         

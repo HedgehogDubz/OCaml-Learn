@@ -1,6 +1,5 @@
 
 
-(*u is cos b v is sin b*)
                             let aw = 80 in
               let ah,cx,cy,ts,ps=24,40.0,12.0,0.07,0.02 in
         let r1,r2,k1,k2,ca,cb=0.25,0.5,500.0,35.0,0.011,0.0084 in

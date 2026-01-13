@@ -3,7 +3,7 @@
 (*u is cos b v is sin b*)
                             let aw = 80 in
               let ah,cx,cy,ts,ps=24,40.0,12.0,0.07,0.02 in
-        let r11,r2,k1,k2,ca,cb=0.25,0.5,500.0,35.0,0.003,0.002 in
+        let r11,r2,k1,k2,ca,cb=0.25,0.5,500.0,35.0,0.001,0.002 in
       let rf a b = let o=Array.make(80 * 24) ' 'in let ca =cos a in
     let sa,u,v=sin a,cos b,sin b in let z=Array.make(80 * 24) 0.0 in
   let rec tl t = if t < 6.28 then begin let ct , st = cos t , sin t in

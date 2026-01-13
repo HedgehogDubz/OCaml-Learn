@@ -18,8 +18,8 @@ let l=0.7*. (cp *. ct                          *. v-. ca*.ct*.sp-.sa*.st
 +.u*.(ca*.st-.ct*.  sa                        *. sp)) in (if l > 0.0 then
 let xi = int_of_float (xp)                  in let yi=int_of_float yp in
 if xi>=0 && xi < aw&&yi >= 0 && yi < ah then begin let ix = xi + yi * aw
-  in if oz> z.(ix) then begin z.(ix) <- oz; o.(ix) <- j l; end end);
-  pl (p+.ps) end in pl 0.0; tl (t+.ts) end in tl 0.0; let b =Bytes.create
+  in if oz> z.(ix) then begin z.(ix) <- oz; o.(ix) <- j l; end end);pl
+  (p+.ps) end in pl 0.0; tl (t+.ts) end in tl 0.0; let b =Bytes.create
   (ah * (aw + 1)) in for y = 0 to ah-1 do for x = 0 to aw - 1 do Bytes
     .set b (y * (aw + 1) + x) o.(x + y * aw)done; Bytes.set b (y * (
       aw + 1) + aw) '\n' done;Bytes.to_string b in for i=0 to 10000
